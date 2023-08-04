@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/blog
-    username: postgres
-    password: durj0y
+    url: jdbc:postgresql://${postgresql://postgres:wHQ1wiq2ybrgUVQKnA6q@containers-us-west-43.railway.app:7879/railway}:${7879}/${railway}
+    username: ${postgres}
+    password:  ${wHQ1wiq2ybrgUVQKnA6q}
 
   sql:
     init:
