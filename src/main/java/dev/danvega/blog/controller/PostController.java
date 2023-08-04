@@ -40,7 +40,7 @@ public class PostController {
     @GetMapping("/{id}/details")
     public PostDetails getPostDetails(@PathVariable("id") Post post) {
         LOG.info("Post Details called for: " + post.getId());
-        return new PostDetails(post,authors.findById(Objects.requireNonNull(post.getAuthor().getId())).get());
+        return new PostDetails(post,authors.findById(post.getAuthor().getId()).get());
     }
 
 }
